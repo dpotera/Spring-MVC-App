@@ -1,0 +1,38 @@
+[
+  {
+    "message": "Hello World Post!",
+    "time": "2016-02-15",
+    "longitude": 15,
+    "latitude": 69
+  },
+  {
+    "message": "Another Post",
+    "time": "2016-09-22",
+    "longitude": 24,
+    "latitude": 14
+  },
+  {
+    "message": "My name is Dominic.",
+    "time": "2016-07-01",
+    "longitude": 7,
+    "latitude": 69
+  },
+  {
+    "message": "Polska Wroclaw",
+    "time": "2016-11-10",
+    "longitude": 19,
+    "latitude": 79
+  },
+  {
+    "message": "First Day. :D",
+    "time": "2016-09-29",
+    "longitude": 40,
+    "latitude": 60
+  },
+  {
+    "message": "Post a little bit longer that others",
+    "time": "2016-01-30",
+    "longitude": 65,
+    "latitude": 0
+  }
+]

@@ -36,6 +36,9 @@ dependencies {
     compile 'com.github.stefanbirkner:system-rules:1.16.0'
     compile 'org.springframework:spring-test:4.3.1.RELEASE'
     compile 'org.apache.commons:commons-lang3:3.4'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.8.1'
+    compile "org.aspectj:aspectjrt:1.7.3"
+    compile "org.aspectj:aspectjweaver:1.8.9"
 
 
     //include in compile only, exclude in the war

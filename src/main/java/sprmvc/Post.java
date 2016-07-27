@@ -6,11 +6,13 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import java.util.Date;
 
 public class Post {
-    private final Long id;
-    private final String message;
-    private final Date time;
+    private Long id;
+    private String message;
+    private Date time;
     private Double latitude;
     private Double longitude;
+
+    public Post(){}
 
     public Post(String message, Date time) {
         this(message, time, null, null);
@@ -42,6 +44,22 @@ public class Post {
 
     public Double getLongitude() {
         return longitude;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public void setTime(Date time) {
+        this.time = time;
+    }
+
+    public void setLatitude(Double latitude) {
+        this.latitude = latitude;
+    }
+
+    public void setLongitude(Double longitude) {
+        this.longitude = longitude;
     }
 
     @Override
