@@ -4,10 +4,19 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 import sprmvc.web.HomeController;
+import java.util.Date;
 
 public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
+
+        public String createList(String[] array){
+            String result = "<ul>\n";
+            for(String li:array)
+                result += "<li>"+li+"</li>\n";
+            return result+"</ul>\n";
+        }
+    
  HomeController controller = new HomeController(); 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
 
@@ -45,16 +54,25 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("\n");
       out.write("\n");
+      out.write("\n");
       out.write("<html>\n");
       out.write("<head>\n");
       out.write("    <title>Spring MVC</title>\n");
       out.write("</head>\n");
       out.write("<body>\n");
+      out.write("\n");
+      out.write("    ");
+      out.write("\n");
       out.write("    <h1>Hello MVC !</h1>\n");
       out.write("    ");
       out.write("\n");
-      out.write("    HomeController.home() : ");
-      out.print( controller.home() );
+      out.write("    <h3>Today is: ");
+      out.print( new Date() );
+      out.write("</h3>\n");
+      out.write("\n");
+      out.write("    ");
+      out.print( createList(new String[] {"Dominik","Adam","Name","Surname","Lorem","Ipsum"}) );
+      out.write("\n");
       out.write("\n");
       out.write("</body>\n");
       out.write("</html>\n");
