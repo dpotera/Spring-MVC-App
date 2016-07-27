@@ -3,10 +3,12 @@ package org.apache.jsp.WEB_002dINF.views;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import sprmvc.web.HomeController;
 
 public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
+ HomeController controller = new HomeController(); 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
 
   private static java.util.List<String> _jspx_dependants;
@@ -42,12 +44,18 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("\n");
+      out.write("\n");
       out.write("<html>\n");
       out.write("<head>\n");
       out.write("    <title>Spring MVC</title>\n");
       out.write("</head>\n");
       out.write("<body>\n");
       out.write("    <h1>Hello MVC !</h1>\n");
+      out.write("    ");
+      out.write("\n");
+      out.write("    HomeController.home() : ");
+      out.print( controller.home() );
+      out.write("\n");
       out.write("</body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {
