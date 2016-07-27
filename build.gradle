@@ -1,0 +1,41 @@
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
+//apply plugin: 'jetty'
+apply plugin: 'org.akhikhl.gretty'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'org.akhikhl.gretty:gretty:+'
+    }
+}
+
+gretty {
+    port = 8080
+    contextPath = 'sprmvc'
+    servletContainer = 'jetty9'
+}
+
+// JDK 7
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework:spring-webmvc:4.3.1.RELEASE'
+    compile 'javax.servlet:jstl:1.2'
+
+    //include in compile only, exclude in the war
+    providedCompile 'javax.servlet:servlet-api:2.5'
+
+}
+
+
