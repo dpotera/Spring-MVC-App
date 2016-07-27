@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id="sprmvc:main" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
-    <facet type="web" name="Web Gradle : sprmvc.war">
-      <configuration>
-        <webroots>
-          <root url="file://$MODULE_DIR$/../../src/main/webapp" relative="/" />
-        </webroots>
-      </configuration>
-    </facet>
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
           <file>file://$MODULE_DIR$/../../src/main/java/sprmvc/config/RootConfig.java</file>
           <file>file://$MODULE_DIR$/../../src/main/java/sprmvc/config/WebConfig.java</file>
         </fileset>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web Gradle : sprmvc.war">
+      <configuration>
+        <webroots>
+          <root url="file://$MODULE_DIR$/../../src/main/webapp" relative="/" />
+        </webroots>
       </configuration>
     </facet>
   </component>
@@ -31,6 +31,8 @@
     <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
     <orderEntry type="library" name="Gradle: com.github.stefanbirkner:system-rules:1.16.0" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-test:4.3.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-lang3:3.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-library:1.3" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.servlet:javax.servlet-api:3.1.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.websocket:javax.websocket-api:1.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.servlet:servlet-api:2.5" level="project" />
