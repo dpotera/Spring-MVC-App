@@ -30,11 +30,8 @@ public class UserControllerTest {
     public void registerFormTest() throws Exception {
         UserRepo mockRepo = mock(UserRepo.class);
         User unsaved = new User("dpotera","dominik","Dominik","Kowalski","mail@x.o");
-        User saved = new User(24,"dpotera","dominik","Dominik","Kowalski","mail@x.o");
 
-        when(mockRepo.save(unsaved)).thenReturn(saved);
-
-        UserController controller = new UserController();
+        UserController controller = new UserController(mockRepo);
         MockMvc mockMvc = standaloneSetup(controller).build();
         mockMvc.perform(post("/user/register")
                 .param("firstName","Dominik")

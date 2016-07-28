@@ -19,6 +19,12 @@ public class UserController {
     @Autowired
     UserRepo userRepo;
 
+    public UserController() {}
+
+    public UserController(UserRepo userRepo) {
+        this.userRepo = userRepo;
+    }
+
     @RequestMapping(value = "/register", method = RequestMethod.GET)
     public String register(){
         return "registerForm";

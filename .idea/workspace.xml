@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08b04577-4fe6-4f4b-aa83-0601d678bb63" name="Default" comment="added PostController Test">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sprmvc/user/UserRepo.java" afterPath="$PROJECT_DIR$/src/main/java/sprmvc/user/UserRepo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sprmvc/user/UsersRepository.java" afterPath="$PROJECT_DIR$/src/main/java/sprmvc/user/UsersRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sprmvc/web/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/sprmvc/web/UserController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/sprmvc/web/UserControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/sprmvc/web/UserControllerTest.java" />
     </list>
     <ignored path="sprmvc.iws" />
@@ -103,7 +103,7 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sprmvc/user/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
+            <state relative-caret-position="396">
               <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -115,34 +115,13 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sprmvc/web/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="281">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#674#675#0" expanded="true" />
+                <element signature="e#714#715#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sprmvc/config/WebConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding>
-                <element signature="e#1152#1153#0" expanded="false" />
-                <element signature="e#1187#1188#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebAppInitializer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sprmvc/config/WebAppInitializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -151,7 +130,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/sprmvc/user/UserRepo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -160,10 +139,12 @@
       <file leaf-file-name="UsersRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sprmvc/user/UsersRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+            <state relative-caret-position="216">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#369#370#0" expanded="true" />
+                <element signature="e#403#404#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -172,8 +153,8 @@
       <file leaf-file-name="UserControllerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/sprmvc/web/UserControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+            <state relative-caret-position="467">
+              <caret line="31" column="85" selection-start-line="31" selection-start-column="85" selection-end-line="31" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -886,12 +867,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userProfile.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/style.scss" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registerForm.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/sprmvc/web/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/sprmvc/user/User.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/sprmvc/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/sprmvc/user/UserRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/sprmvc/user/UsersRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sprmvc/web/UserController.java" />
         <option value="$PROJECT_DIR$/src/test/java/sprmvc/web/UserControllerTest.java" />
       </list>
     </option>
@@ -1965,31 +1946,31 @@
       <workItem from="1469664468897" duration="56000" />
       <workItem from="1469664543695" duration="6691000" />
       <workItem from="1469711965157" duration="7430000" />
-      <workItem from="1469741315373" duration="1606000" />
+      <workItem from="1469741315373" duration="2428000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HomeControllerTest_homeTest - 2016.07.28 at 16h 03m 33s.xml">
-      <configuration name="HomeControllerTest.homeTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserControllerTest_registerFormTest - 2016.07.28 at 23h 55m 01s.xml">
       <configuration name="UserControllerTest.registerFormTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_registerViewTest - 2016.07.28 at 15h 48m 21s.xml">
-      <configuration name="UserControllerTest.registerViewTest" configurationId="JUnit" />
+    <history-entry file="UserControllerTest_registerFormTest - 2016.07.28 at 23h 55m 25s.xml">
+      <configuration name="UserControllerTest.registerFormTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_registerViewTest - 2016.07.28 at 15h 49m 32s.xml">
-      <configuration name="UserControllerTest.registerViewTest" configurationId="JUnit" />
+    <history-entry file="UserControllerTest_registerFormTest - 2016.07.28 at 23h 56m 49s.xml">
+      <configuration name="UserControllerTest.registerFormTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_registerViewTest - 2016.07.28 at 15h 51m 04s.xml">
-      <configuration name="UserControllerTest.registerViewTest" configurationId="JUnit" />
+    <history-entry file="UserControllerTest_registerFormTest - 2016.07.28 at 23h 57m 52s.xml">
+      <configuration name="UserControllerTest.registerFormTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_registerViewTest - 2016.07.28 at 15h 53m 27s.xml">
-      <configuration name="UserControllerTest.registerViewTest" configurationId="JUnit" />
+    <history-entry file="UserControllerTest_registerFormTest - 2016.07.28 at 23h 59m 51s.xml">
+      <configuration name="UserControllerTest.registerFormTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_registerViewTest - 2016.07.28 at 15h 54m 15s.xml">
-      <configuration name="UserControllerTest.registerViewTest" configurationId="JUnit" />
+    <history-entry file="UserControllerTest_registerFormTest - 2016.07.29 at 00h 02m 27s.xml">
+      <configuration name="UserControllerTest.registerFormTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserControllerTest_registerFormTest - 2016.07.29 at 00h 08m 26s.xml">
+      <configuration name="UserControllerTest.registerFormTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="UserControllerTest_registerViewTest - 2016.07.28 at 16h 04m 05s.xml">
       <configuration name="UserControllerTest.registerViewTest" configurationId="JUnit" />
@@ -2002,7 +1983,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37852000" />
+    <option name="totallyTimeSpent" value="38674000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -2025,9 +2006,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2848423" sideWeight="0.49811321" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2848423" sideWeight="0.49811321" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1638814" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -2481,6 +2462,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Post#2;class#Post#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2527,35 +2512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sprmvc/config/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#1152#1153#0" expanded="false" />
-            <element signature="e#1187#1188#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sprmvc/user/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sprmvc/config/WebAppInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -2572,38 +2528,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sprmvc/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sprmvc/user/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sprmvc/config/WebAppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sprmvc/user/UserRepo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sprmvc/user/UsersRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+        <state relative-caret-position="216">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sprmvc/web/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="281">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/sprmvc/web/UserControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+        <state relative-caret-position="467">
+          <caret line="31" column="85" selection-start-line="31" selection-start-column="85" selection-end-line="31" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

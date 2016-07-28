@@ -15,9 +15,8 @@ public class UsersRepository implements UserRepo {
     }
 
     @Override
-    public User save(User user) {
+    public void save(User user) {
         userList.add(user);
-        return userList.get(userList.size()-1);
     }
 
     @Override
