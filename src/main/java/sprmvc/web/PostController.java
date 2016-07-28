@@ -5,8 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import sprmvc.Post;
-import sprmvc.PostRepo;
+import sprmvc.post.Post;
+import sprmvc.post.PostRepo;
 
 import java.util.List;
 

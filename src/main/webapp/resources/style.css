@@ -28,4 +28,11 @@ h2.error {
   color: red;
   font-size: 48px; }
 
+table.userProfile {
+  margin: 20px;
+  border-collapse: collapse; }
+  table.userProfile td {
+    padding: 10px;
+    border: 1px solid black; }
+
 /*# sourceMappingURL=style.css.map */

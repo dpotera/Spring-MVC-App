@@ -3,9 +3,8 @@ package sprmvc.web;
 import org.junit.Test;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.web.servlet.view.InternalResourceView;
-import sprmvc.Post;
-import sprmvc.PostRepo;
-import sprmvc.web.PostController;
+import sprmvc.post.Post;
+import sprmvc.post.PostRepo;
 
 import java.util.ArrayList;
 import java.util.Date;

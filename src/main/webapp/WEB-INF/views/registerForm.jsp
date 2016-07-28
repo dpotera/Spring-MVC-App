@@ -13,7 +13,7 @@
 
     <form method="post">
         User Name: <input type="text" name="userName"><br>
-        Password: <input type="text" name="password"><br>
+        Password: <input type="password" name="password"><br>
         First Name: <input type="text" name="firstName"><br>
         Last Name: <input type="text" name="lastName"><br>
         Email: <input type="email" name="email"><br>
