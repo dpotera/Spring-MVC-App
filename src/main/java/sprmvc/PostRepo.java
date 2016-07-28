@@ -1,7 +1,12 @@
 package sprmvc;
 
+
 import java.util.List;
 
 public interface PostRepo {
-    List<Post> findPosts(long max, int number);
+    public static final String POST_NOT_FOUND = "Sorry :( Post that You are looking for don't exists.";
+
+    List<Post> findPosts(int max, int number);
+
+    Post getPost(long id) throws IllegalArgumentException;
 }

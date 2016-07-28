@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Component
@@ -16,17 +17,27 @@ public class PostsList implements PostRepo {
     public PostsList() throws IOException {
         FileReader file = new FileReader("src/main/resources/posts.json");
         ObjectMapper mapper = new ObjectMapper();
-        Post[] posts = mapper.readValue(file,Post[].class);
+        Post[] posts = mapper.readValue(file, Post[].class);
         postList = new ArrayList<>();
-        for(Post p : posts)
-            postList.add(p);
+        postList.addAll(Arrays.asList(posts));
     }
 
     @Override
-    public List<Post> findPosts(long max, int number) {
+    public List<Post> findPosts(int max, int number) {
         List<Post> result = new ArrayList<>();
-        for(int i=0; i<max && i<postList.size(); i++)
-            result.add(postList.get(i));
+        int size = postList.size();
+        int maxVal = (size < max ? size : max);
+        int border = maxVal - number;
+        border = border >= 0 ? border : 0;
+        for (int i = maxVal; i > border; i--)
+            result.add(postList.get(i - 1));
         return result;
+    }
+
+    @Override
+    public Post getPost(long id) throws IllegalArgumentException {
+        if (id >= postList.size() || id < 0)
+            throw new IllegalArgumentException();
+        return postList.get((int) id);
     }
 }

@@ -71,4 +71,15 @@ public class Post {
     public int hashCode() {
         return HashCodeBuilder.reflectionHashCode(this, "id", "time");
     }
+
+    @Override
+    public String toString() {
+        return "Post{" +
+                "id=" + id +
+                ", message='" + message + '\'' +
+                ", time=" + time +
+                ", latitude=" + latitude +
+                ", longitude=" + longitude +
+                '}';
+    }
 }

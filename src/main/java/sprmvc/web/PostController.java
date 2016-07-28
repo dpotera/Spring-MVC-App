@@ -2,14 +2,18 @@ package sprmvc.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import sprmvc.Post;
 import sprmvc.PostRepo;
+
+import java.util.List;
 
 @Controller
 @RequestMapping(value = "/posts")
 public class PostController {
+    private static final String MAX_INT_AS_STRING = "2147483647";
 
     private PostRepo postRepo;
 
@@ -19,9 +23,10 @@ public class PostController {
     }
 
     @RequestMapping(method = RequestMethod.GET)
-    public String posts(Model model) {
-        model.addAttribute("postsList", postRepo.findPosts(Long.MAX_VALUE, 20));
-        return "posts";
+    public List<Post> posts(
+            @RequestParam(value = "max", defaultValue = MAX_INT_AS_STRING) int max,
+            @RequestParam(value = "number", defaultValue = "20") int number) {
+        return postRepo.findPosts(max, number);
     }
 
 }

@@ -1,2 +1,14 @@
 body{font-family: 'Ubuntu';}
 h1{text-align: center;}
+
+.post{width: 30%; float: left; box-sizing: border-box;
+  padding: 20px; margin: 1.5%;
+  border: 2px solid black;
+  h3{margin: 0 0 30px 0;}
+  table{border-collapse: collapse;
+    td{border: 1px solid black; padding: 10px;}
+  }
+}
+
+h2.error{width: 100%; position: absolute; top: 40%; left: 0;
+  text-align: center; color: red; font-size: 48px;}

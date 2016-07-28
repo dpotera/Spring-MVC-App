@@ -34,5 +34,17 @@
     "time": "2016-01-30",
     "longitude": 65,
     "latitude": 0
+  },
+  {
+    "message": "Post imported from Twitter",
+    "time": "2016-07-11",
+    "longitude": 12,
+    "latitude": 47
+  },
+  {
+    "message": "Post imported from another Social Media",
+    "time": "2016-09-28",
+    "longitude": 778,
+    "latitude": 14
   }
 ]

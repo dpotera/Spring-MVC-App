@@ -21,7 +21,7 @@ public class PostControllerTest {
     public void shoudShowRecentPosts() throws Exception {
         List<Post> postList = cretePostsList(20);
         PostRepo postRepo = mock(PostRepo.class);
-        when(postRepo.findPosts(Long.MAX_VALUE,20)).thenReturn(postList);
+        when(postRepo.findPosts(Integer.MAX_VALUE,20)).thenReturn(postList);
 
         PostController controller = new PostController(postRepo);
         MockMvc mockMvc = standaloneSetup(controller).setSingleView(
@@ -30,8 +30,8 @@ public class PostControllerTest {
 
         mockMvc.perform(get("/posts"))
             .andExpect(view().name("posts"))
-            .andExpect(model().attributeExists("postsList"))
-            .andExpect(model().attribute("postsList",hasItems(postList.toArray())));
+            .andExpect(model().attributeExists("postList"))
+            .andExpect(model().attribute("postList",hasItems(postList.toArray())));
     }
 
     public List<Post> cretePostsList(int number){
@@ -40,4 +40,5 @@ public class PostControllerTest {
             postList.add(new Post("Post "+i,new Date()));
         return postList;
     }
+
 }
