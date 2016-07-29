@@ -35,4 +35,11 @@ table.userProfile {
     padding: 10px;
     border: 1px solid black; }
 
+.error {
+  display: inline-block;
+  color: red;
+  font-size: 14px;
+  vertical-align: middle;
+  margin-left: 15px; }
+
 /*# sourceMappingURL=style.css.map */

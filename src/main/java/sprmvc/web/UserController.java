@@ -26,7 +26,8 @@ public class UserController {
     }
 
     @RequestMapping(value = "/register", method = RequestMethod.GET)
-    public String register(){
+    public String register(Model model){
+        model.addAttribute(new User());
         return "registerForm";
     }
 
