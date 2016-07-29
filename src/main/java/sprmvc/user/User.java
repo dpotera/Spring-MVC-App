@@ -2,29 +2,33 @@ package sprmvc.user;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.hibernate.validator.constraints.Email;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+
 
 public class User {
     private int id;
 
     @NotNull
-    @Size(min = 5,max = 16)
+    @Size(min = 5,max = 16, message = "{username.size}")
     private String userName;
 
     @NotNull
-    @Size(min = 5,max = 25)
+    @Size(min = 5,max = 25, message = "{password.size}")
     private String password;
 
     @NotNull
-    @Size(min = 3,max = 30)
+    @Size(min = 3,max = 30, message = "{firstname.size}")
     private String firstName;
 
     @NotNull
-    @Size(min = 5,max = 16)
+    @Size(min = 5,max = 16, message = "{lastname.size}")
     private String lastName;
 
+    @NotNull
+    @Email(message = "{email.message}")
     private String email;
 
     public User() {}

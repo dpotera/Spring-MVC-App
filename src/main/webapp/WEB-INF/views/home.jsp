@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="s" uri="http://www.springframework.org/tags" %>
 <%@ page import="sprmvc.web.HomeController" %>
 <%@ page import="java.util.Date" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -20,7 +21,9 @@
         }
     %>
 
-    <h1>Hello MVC !</h1>
+    <h1>
+        <s:message code="home.helloWorld" />
+    </h1>
     <%! HomeController controller = new HomeController(); %>
     <h3>Today is: <%= new Date() %></h3>
 

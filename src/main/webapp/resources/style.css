@@ -28,18 +28,32 @@ h2.error {
   color: red;
   font-size: 48px; }
 
-table.userProfile {
-  margin: 20px;
-  border-collapse: collapse; }
-  table.userProfile td {
-    padding: 10px;
-    border: 1px solid black; }
-
-.error {
-  display: inline-block;
-  color: red;
+.errors {
+  color: black;
   font-size: 14px;
   vertical-align: middle;
-  margin-left: 15px; }
+  background: lightcoral;
+  padding: 15px;
+  border: 2px solid crimson;
+  margin: 30px 15px 15px 15px;
+  position: relative;
+  border-radius: 0 5px 5px 5px;
+  box-sizing: border-box; }
+  .errors:before {
+    content: 'Errors';
+    display: block;
+    position: absolute;
+    top: -28px;
+    left: -2px;
+    background: lightcoral;
+    border-radius: 5px 5px 0 0;
+    border: 2px solid crimson;
+    padding: 5px 10px;
+    border-bottom: 0;
+    font-weight: bold; }
+
+.register-form label {
+  display: inline-block;
+  width: 200px; }
 
 /*# sourceMappingURL=style.css.map */
