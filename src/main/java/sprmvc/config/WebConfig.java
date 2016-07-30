@@ -12,6 +12,8 @@ import org.springframework.web.servlet.config.annotation.DefaultServletHandlerCo
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
+import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
+import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
 
 @Configuration
 @EnableWebMvc
@@ -21,11 +23,11 @@ public class WebConfig extends WebMvcConfigurerAdapter{
 
     @Bean
     public ViewResolver viewResolver(){
-        InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-        resolver.setPrefix("/WEB-INF/views/");
-        resolver.setSuffix(".jsp");
-        resolver.setViewClass(JstlView.class);
-        return resolver;
+//        InternalResourceViewResolver resolver = new InternalResourceViewResolver();
+//        resolver.setPrefix("/WEB-INF/views/");
+//        resolver.setSuffix(".jsp");
+//        resolver.setViewClass(JstlView.class);
+        return new TilesViewResolver();
     }
 
     @Override
@@ -40,4 +42,13 @@ public class WebConfig extends WebMvcConfigurerAdapter{
         messageSource.setBasename("messages");
         return messageSource;
     }
+
+    @Bean
+    public TilesConfigurer tilesConfigurer(){
+        TilesConfigurer tiles = new TilesConfigurer();
+        tiles.setDefinitions("/WEB-INF/layouts/tiles.xml");
+        tiles.setCheckRefresh(true);
+        return tiles;
+    }
+
 }

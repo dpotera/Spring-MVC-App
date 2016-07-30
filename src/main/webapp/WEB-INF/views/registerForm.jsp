@@ -55,9 +55,14 @@
                     <label for="lastName">Email</label>
                 </div>
             </div>
-            <button class="btn waves-effect waves-light" type="submit">
-                Register <i class="material-icons right">send</i>
-            </button>
+            <div class="row">
+                <div class="col s6">
+                    <button class="btn waves-effect waves-light right" type="submit">
+                        Register <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+
         </sf:form>
     </div>
 </body>

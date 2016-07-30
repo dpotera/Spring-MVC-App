@@ -18,6 +18,9 @@ public class PostsList implements PostRepo {
         FileReader file = new FileReader("src/main/resources/posts.json");
         ObjectMapper mapper = new ObjectMapper();
         Post[] posts = mapper.readValue(file, Post[].class);
+        int i=1;
+        for(Post post:posts)
+            post.setId(i++);
         postList = new ArrayList<>();
         postList.addAll(Arrays.asList(posts));
     }

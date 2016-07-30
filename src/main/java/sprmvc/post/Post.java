@@ -6,7 +6,7 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import java.util.Date;
 
 public class Post {
-    private Long id;
+    private int id;
     private String message;
     private Date time;
     private Double latitude;
@@ -19,14 +19,14 @@ public class Post {
     }
 
     public Post(String message, Date time, Double latitude, Double longitude) {
-        this.id = null;
+        this.id = 0;
         this.message = message;
         this.time = time;
         this.latitude = latitude;
         this.longitude = longitude;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
@@ -44,6 +44,10 @@ public class Post {
 
     public Double getLongitude() {
         return longitude;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setMessage(String message) {
