@@ -3,6 +3,9 @@ package sprmvc.web;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.io.File;
+import java.io.IOException;
+
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @Controller
@@ -10,7 +13,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 public class HomeController {
 
     @RequestMapping(method = GET)
-    public String home() {
+    public String home() throws IOException {
         return "home";
     }
 

@@ -37,6 +37,12 @@
                         <td>Email adress:</td>
                         <td><c:out value="${user.email}" /></td>
                     </tr>
+                    <tr>
+                        <td>Profile picture:</td>
+                        <td>
+                            <img src="<c:url value="${user.profilePicturePath}" />" alt="Profile Picture"/>
+                        </td>
+                    </tr>
                 </table>
             </div>
         </div>

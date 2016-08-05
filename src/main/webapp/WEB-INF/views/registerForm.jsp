@@ -18,7 +18,7 @@
 
         <h1>Registration</h1>
 
-        <sf:form method="POST" commandName="user" cssClass="register-form">
+        <sf:form method="POST" commandName="user" cssClass="register-form" enctype="multipart/form-data">
             <div class="row">
                 <div class="col s12 m6">
                     <sf:errors path="*" cssClass="card-panel pink white-text" element="div" />
@@ -52,7 +52,13 @@
             <div class="row">
                 <div class="input-field col s6">
                     <sf:input path="email" cssClass="validate" />
-                    <label for="lastName">Email</label>
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                    <label for="file">Profile picture</label>
+                    <sf:input type="file" path="file" cssClass="validate" />
                 </div>
             </div>
             <div class="row">

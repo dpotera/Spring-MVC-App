@@ -4,20 +4,28 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import sprmvc.user.User;
 import sprmvc.user.UserRepo;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 @Controller
 @RequestMapping("/user")
 public class UserController {
 
+    private static final String ROOT = "/home/dominik/IdeaProjects/sprmvc/src/main/webapp/uploads/";
+
     @Autowired
     UserRepo userRepo;
+
+    @Autowired
+    HttpServletRequest request;
 
     public UserController() {}
 
@@ -32,9 +40,17 @@ public class UserController {
     }
 
     @RequestMapping(value = "/register", method = RequestMethod.POST)
-    public String completeRegistration(@Valid User user, Errors errors){
+    public String completeRegistration(@Valid User user, Errors errors) throws IOException {
         if(errors.hasErrors())
             return "registerForm";
+        MultipartFile multipartFile = user.getFile();
+
+        if(multipartFile.isEmpty()) System.out.println("Empty file");
+
+        String fileName = multipartFile.getOriginalFilename();
+        Files.copy(multipartFile.getInputStream(), Paths.get(ROOT,fileName));
+
+        user.setProfilePicturePath("/uploads/"+fileName);
         userRepo.save(user);
         return "redirect:/user/"+user.getUserName();
     }

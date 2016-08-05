@@ -3,6 +3,7 @@ package sprmvc.user;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.hibernate.validator.constraints.Email;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -30,6 +31,11 @@ public class User {
     @NotNull
     @Email(message = "{email.message}")
     private String email;
+
+    @NotNull
+    private MultipartFile file;
+
+    private String profilePicturePath;
 
     public User() {}
 
@@ -92,6 +98,22 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public MultipartFile getFile() {
+        return file;
+    }
+
+    public void setFile(MultipartFile file) {
+        this.file = file;
+    }
+
+    public String getProfilePicturePath() {
+        return profilePicturePath;
+    }
+
+    public void setProfilePicturePath(String profilePicturePath) {
+        this.profilePicturePath = profilePicturePath;
     }
 
     @Override
