@@ -15,10 +15,10 @@
 
         <div class="col s12 m6 l4">
             <div class="card blue-grey lighten-4s">
-                <div class="card-content black-text">
+                <div class="card-content white-text">
                     <span class="card-title"><c:out value="${post.message}"/></span>
                     <table class="bordered striped">
-                        <thead>
+                        <thead class="white-text">
                             <tr>
                                 <th class="data-field">Time</th>
                                 <th class="data-field">Latitude</th>

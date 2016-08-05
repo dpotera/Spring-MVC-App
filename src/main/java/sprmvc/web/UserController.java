@@ -1,11 +1,13 @@
 package sprmvc.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import sprmvc.upload.Upload;
 import sprmvc.user.User;
 import sprmvc.user.UserRepo;
 
@@ -18,8 +20,6 @@ import java.nio.file.Paths;
 @Controller
 @RequestMapping("/user")
 public class UserController {
-
-    private static final String ROOT = "/home/dominik/IdeaProjects/sprmvc/src/main/webapp/uploads/";
 
     @Autowired
     UserRepo userRepo;
@@ -48,7 +48,7 @@ public class UserController {
         if(multipartFile.isEmpty()) System.out.println("Empty file");
 
         String fileName = multipartFile.getOriginalFilename();
-        Files.copy(multipartFile.getInputStream(), Paths.get(ROOT,fileName));
+        Files.copy(multipartFile.getInputStream(), Paths.get(Upload.ROOT,fileName));
 
         user.setProfilePicturePath("/uploads/"+fileName);
         userRepo.save(user);

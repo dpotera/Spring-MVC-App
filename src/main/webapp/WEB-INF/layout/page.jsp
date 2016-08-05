@@ -13,6 +13,7 @@
 
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="<c:url value="/resources/page.js" />"></script>
 </head>
 <body>
 

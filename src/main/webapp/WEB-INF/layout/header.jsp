@@ -18,6 +18,7 @@
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="<s:url value="/" />">Home</a></li>
                 <li><a href="<s:url value="/user/register" />">Register</a></li>
+                <li><a href="<s:url value="/upload" />">Upload</a></li>
                 <li><a href="${postsUrl}">Posts</a></li>
                 <li><a href="${latestPost}">Latest Post</a></li>
             </ul>

@@ -25,4 +25,10 @@
     <definition name="error" extends="base">
         <put-attribute name="body" value="/WEB-INF/views/error.jsp" />
     </definition>
+    <definition name="upload" extends="base">
+        <put-attribute name="body" value="/WEB-INF/views/upload.jsp" />
+    </definition>
+    <definition name="uploadResult" extends="base">
+        <put-attribute name="body" value="/WEB-INF/views/uploadResult.jsp" />
+    </definition>
 </tiles-definitions>
