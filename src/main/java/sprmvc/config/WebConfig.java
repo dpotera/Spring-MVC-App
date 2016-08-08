@@ -15,6 +15,7 @@ import org.springframework.web.servlet.config.annotation.DefaultServletHandlerCo
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
+import sprmvc.exceptions.AppExceptionHandler;
 
 @Configuration
 @EnableWebMvc
@@ -55,6 +56,11 @@ public class WebConfig extends WebMvcConfigurerAdapter{
     @Bean
     public MultipartResolver multipartResolver(){
         return new StandardServletMultipartResolver();
+    }
+
+    @Bean
+    public AppExceptionHandler exceptionHandler(){
+        return new AppExceptionHandler();
     }
 
 

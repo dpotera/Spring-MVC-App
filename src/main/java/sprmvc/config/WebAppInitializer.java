@@ -9,9 +9,6 @@ import javax.servlet.http.HttpServletRequest;
 
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
-    @Autowired
-    HttpServletRequest request;
-
     @Override
     protected String[] getServletMappings() {
         return new String[]{"/"};

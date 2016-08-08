@@ -5,10 +5,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import sprmvc.upload.Upload;
 import sprmvc.upload.UploadList;
 import sprmvc.upload.UploadedFile;
@@ -41,20 +43,15 @@ public class UploadController {
         if (checkFile.exists())
             checkFile.delete();
 
-        Files.copy(file.getInputStream(), Paths.get(Upload.ROOT,fileName));
-//        try {
-//        } catch (IOException e) {
-//            model.addAttribute("error","Failed to upload file.");
-//            return "error";
-//        }
+        throw new IOException();
 
-        UploadedFile uploadedFile = new UploadedFile(Upload.ROOT+fileName,"/uploads/"+fileName,fileSize,fileName);
-        filesList.addFile(uploadedFile);
-        model.addAttribute("files",filesList.returnFiles());
-
-        return "upload";
+//        Files.copy(file.getInputStream(), Paths.get(Upload.ROOT,fileName));
+//
+//        UploadedFile uploadedFile = new UploadedFile(Upload.ROOT+fileName,"/uploads/"+fileName,fileSize,fileName);
+//        filesList.addFile(uploadedFile);
+//        model.addAttribute("files",filesList.returnFiles());
+//
+//        return "upload";
     }
-
-
 
 }
