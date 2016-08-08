@@ -9,5 +9,11 @@
 </head>
 <body>
     <h2 class="error">ERROR: <br><c:out value="${error}" /></h2>
+
+    <!--
+
+        <c:out value="${msg}" />
+
+    -->
 </body>
 </html>

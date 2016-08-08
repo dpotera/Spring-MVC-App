@@ -13,6 +13,7 @@ import sprmvc.user.UserRepo;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -45,13 +46,18 @@ public class UserController {
             return "registerForm";
         MultipartFile multipartFile = user.getFile();
 
-        if(multipartFile.isEmpty()) System.out.println("Empty file");
-
         String fileName = multipartFile.getOriginalFilename();
+
+        File checkFile = new File(Upload.ROOT+fileName);
+        if (checkFile.exists())
+            if(checkFile.delete())
+                System.out.print("Deleted file: "+checkFile.getPath());
+
         Files.copy(multipartFile.getInputStream(), Paths.get(Upload.ROOT,fileName));
 
         user.setProfilePicturePath("/uploads/"+fileName);
         userRepo.save(user);
+
         return "redirect:/user/"+user.getUserName();
     }
 

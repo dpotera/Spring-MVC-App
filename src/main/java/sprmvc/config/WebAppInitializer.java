@@ -26,7 +26,7 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
 
     @Override
     protected void customizeRegistration(ServletRegistration.Dynamic registration) {
-        String uploadPath = "/home/dominik/IdeaProjects/sprmvc/src/main/uploads/";
+        String uploadPath = "/home/dominik/IdeaProjects/sprmvc/src/main/webapp/uploads/";
         registration.setMultipartConfig(new MultipartConfigElement(uploadPath, 10000000, 15194304, 0));
     }
 }

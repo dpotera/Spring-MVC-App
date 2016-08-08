@@ -10,8 +10,10 @@ import java.io.IOException;
 public class AppExceptionHandler {
 
     @ExceptionHandler(IOException.class)
-    public String IOExceptionHandler(Model model){
+    public String IOExceptionHandler(Model model, Exception ex){
         model.addAttribute("error","IOException");
+        model.addAttribute("msg",ex.toString());
+        ex.printStackTrace();
         return "error";
     }
 
